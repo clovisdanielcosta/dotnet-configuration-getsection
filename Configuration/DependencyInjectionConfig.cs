@@ -10,4 +10,10 @@ public static class DependencyInjectionConfig
 
         return builder;
     }
+
+    public static void AddSecretExtension(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddTransient(c => configuration.GetSection("SecretSettingsDb").Get<SecretSettingDb>());
+    }
+
 }
