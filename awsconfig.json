@@ -1,0 +1,7 @@
+﻿{
+	"SecretSettingsDb": {
+		"SecretName": "development/mydbsample/postgressql",
+		"Region": "us-east-2",
+		"VersionStage": "AWSCURRENT"
+	}
+}
